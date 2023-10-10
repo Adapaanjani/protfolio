@@ -1,0 +1,217 @@
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Make sure the container takes at least the full viewport height */
+}
+
+
+.Intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+  }
+  
+  /* left side styling */
+  .i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 10%; /* Add margin to the left side */
+  }
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+  .i-button {
+    width: 6rem;
+    height: 2rem;
+  }
+  .i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+  }
+  .i-icons > * {
+    transform: scale(0.5);
+  }
+  .i-icons > *:hover {
+    cursor: pointer;
+  }
+  /* right side styling */
+  .i-right {
+    flex: 1;
+    position: relative;
+    right: 10%; /* Adjust position to remove space on the right side */
+  }
+  .i-right > * {
+    position: absolute;
+    z-index: 1;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(0.69);
+    left: 19%;
+    top: -16%;
+  }
+  /* intro.css */
+
+.circular-image {
+  width: 396px;
+  height: 447px;/* Adjust the size as needed */
+  border-radius: 50%; /* Creates a circular shape */
+  overflow: hidden; /* Clips the image to the circular shape */
+  box-shadow: 0 0 70px rgba(253, 137, 205, 0.888); /* Adds a shadow effect */
+  left: -24%;
+}
+
+.circular-image img {
+  width: 100%; /* Makes the image fill the circular frame */
+  height: 100%; /* Makes the image fill the circular frame */
+  object-fit: cover; /* Scales the image to cover the frame */
+} 
+
+.circular-image2 {
+  width: 303px;
+  height: 333px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 70px rgba(244, 146, 243, 0.938);
+  margin-left: 6%;
+  margin-top: 48px;
+}
+
+.circular-image2 img {
+  width: 100%; /* Makes the image fill the circular frame */
+  height: 100%; /* Makes the image fill the circular frame */
+  object-fit: cover; /* Scales the image to cover the frame */
+} 
+
+.about {
+  display: flex;
+  align-items: center;
+  border: 2px solid #cbe0f6; /* Add your desired border style here */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 2;
+  text-align: center;
+  margin-left: 31px;
+}
+
+/* Styles for the animated skills container */
+
+
+
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .left, .right {
+      flex: 1;
+      width: 100%;
+  }
+}
+
+
+/* i
+
+
+  
+  /* blur */
+  .blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+  }
+  
+  /* Add styles to the "about" div */
+.about {
+  position: relative; /* Make sure it's positioned relative for the animation */
+}
+
+/* Create an outline box with animation */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid transparent; /* Initially transparent */
+  border-radius: 5px;
+  pointer-events: none; /* Allow clicks to pass through the outline box */
+  animation: outlineAnimation 2s infinite alternate; /* Animation effect */
+}
+
+
+  @media screen and (max-width: 480px) {
+    .Intro {
+      flex-direction: column;
+      gap: 7rem;
+      height: 64rem;
+    }
+  
+    .i-right {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+    .i-right .blur {
+      display: none;
+    }
+    .floating-div:nth-of-type(1){
+      /* display: none; */
+      top: -7rem !important;;
+    }
+
+    .i-left {
+    margin-left: 0; /* Reset margin on mobile screens */
+  }
+  .i-right {
+    right: 0; /* Reset position on mobile screens */
+    /* ... (Other mobile styles) */
+  }
+
+  .left {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  }
+
+/* Your existing styles for .about */
+
+/* Define the fade-out and fade-in animations */

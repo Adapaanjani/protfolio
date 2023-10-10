@@ -1,0 +1,71 @@
+/* Default styles for larger screens */
+.skills-container {
+  padding: 20px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.chart-container {
+  max-width: 50%;
+  height: auto;
+}
+
+.Skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3f0f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+/* Styles for the "Non-Technical" box (on the left) */
+.sleft,
+.sright {
+  display: inline-block;
+  width: calc(50% - 5px);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin-right: 5px;
+}
+
+/* Hover effect to scale up the boxes */
+.sleft:hover,
+.sright:hover {
+  transform: scale(1.05);
+}
+
+/* Hover effect to change the background color of the container */
+.skills-container:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .Skills {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sleft,
+  .sright {
+    margin: 10px 0;
+  }
+}

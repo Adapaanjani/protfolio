@@ -1,0 +1,151 @@
+.navbar{
+    background-color: #fff;
+}
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    top: 0;
+  }
+/* Add this CSS in your Header.css file */
+.text-with-background {
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: transparent;
+  background-image: url('prot.jpg'); /* Replace with your image path */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Set the background color for the fixed navbar */
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+ 
+  .n-left {
+    flex: 1;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .n-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .n-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 400;
+  }
+  
+  .n-list {
+    flex: 10;
+  }
+  .n-list > ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+  }
+  
+  .n-list > ul :hover {
+    color: var(--orange);
+    cursor: pointer;
+  }
+  
+  .n-button {
+    flex: 2;
+    
+  }
+
+/* Your existing styles for desktop view */
+
+/* Hamburger menu icon - Hidden by default for desktop */
+.hamburger-icon {
+  display: none;
+}
+
+/* Responsive styles for mobile screens (adjust breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  /* Hide the existing desktop navigation */
+  .n-list {
+    display: none;
+  }
+
+  /* Display the hamburger icon for mobile */
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Bar styling for the hamburger icon */
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #d271f2; /* Color of the bars */
+    margin: 4px 0;   
+    transition: 0.4s; /* Transition for bar animation */
+  }
+
+  /* Add animation to the bars when the menu is open */
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Style the open menu */
+  .n-list.open {
+    display: block;
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    right: 0;
+    background-color: #fff; /* Background color for the menu */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for the menu */
+    z-index: 2; /* Ensure it appears above other content */
+    transition: 0.3s; /* Transition for menu animation */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* Style links in the open menu */
+  .n-list.open ul li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Adjust link styles as needed */
+  .n-list.open ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+
+  
+  
+  
+
+
+  
+  @media screen and (max-width: 480px) {
+    .n-list {
+      display: none;
+    }
+  }
+
