@@ -13,7 +13,7 @@ return (
           <span >Hy! I Am</span>
           <span>Anjani Naga Sai Satya Sri Adapa </span>
           <span>
-            An undergraduate at kiew and a junior developer at khub which is organised by IIIT-H 
+          Data-driven software developer with expertise in machine learning, MERN and Data Science. Excited to contribute to innovative projects, leveraging these skills to build scalable, secure, and cutting-edge solutions that drive significant business growth. Eager to collaborate within cross-functional teams.
           </span>
         </div>
         {/* social icons */}
@@ -51,15 +51,20 @@ return (
        <div ClassName="left">
         <div className="circular-image2">
           <img
-             src="formal2.jpg"
+             src="imp.jpg"
              alt="image"
           />
         </div>
        </div>
        <div className="right">
         <div classNmame="head"><span><h1>ABOUT</h1></span></div>
-        <p>"I am a passionate engineering student specializing in Computer Science, with a strong drive to explore the ever-evolving world of technology. Alongside my academic pursuits, I have embraced my love for web development and am thrilled to be a junior web developer. My journey in the field of Computer Science has allowed me to combine my problem-solving skills with creativity to craft innovative digital solutions. Whether it's diving into the complexities of algorithms or designing user-friendly websites, I am constantly seeking opportunities to learn, grow, and make a positive impact in the digital realm. I'm excited to share my experiences and contribute to the exciting developments in the tech industry."</p>
-    
+        <p>I am a passionate and data-driven software developer currently in my final year of studies, specializing in Machine Learning, Data Science, and the MERN (MongoDB, Express, React, Node.js) stack. With a strong foundation in full-stack development and an in-depth understanding of data analytics, I am eager to contribute to innovative projects that leverage technology to solve real-world problems.
+
+Throughout my academic journey, I have worked on various projects that involved building scalable and secure web applications, implementing machine learning models, and analyzing large datasets to drive meaningful insights. I thrive in collaborative, cross-functional teams and aim to develop solutions that not only meet technical requirements but also align with business goals to drive significant growth.
+
+I am actively seeking opportunities to apply my skills in dynamic environments where I can continue to grow, learn, and contribute to cutting-edge technology solutions.</p>
+
+
        </div>
     </div>
        
