@@ -55,12 +55,12 @@ const Projects = () => {
 
       {/* Box 3 */}
       <div className="box">
-        <img src="snake.png" alt="Project 3" />
+        <img src="khub.png" alt="Project 3" />
         <div className="overlay">
-          <a href="https://www.linkedin.com/posts/anjani-naga-sai-satya-sri-adapa-520236223_python-pygame-minigame-activity-7091644902756794368-F4Uk?utm_source=share&utm_medium=member_desktop" className="live-demo">
+          <a href="https://drive.google.com/file/d/1U7QulgmEZtyqFKI6AqYgAqwpZgV4e4G9/view?usp=sharing" className="live-demo">
             Live Demo
           </a>
-          <a href="https://github.com/Adapaanjani/snake-game-project2" className="github-link">
+          <a href="https://github.com/Adapaanjani/khub-website" className="github-link">
            Code
           </a>
         </div>
