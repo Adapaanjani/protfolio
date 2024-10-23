@@ -22,7 +22,11 @@ const Skills = () => {
       { label: "React", percentage: 75, color: "#33A2FF" },
       { label: "Flask", percentage: 70, color: "#9D33FF" },
       { label: "Python", percentage: 95, color: "#FF33DB" },
+      { label: "MongoDB", percentage: 80, color: "#4CAF50" },  // Added MongoDB
+      { label: "Node.js", percentage: 85, color: "#68A063" },  // Added Node.js
+      { label: "MinIO", percentage: 65, color: "#F4A261" }     // Added MinIO
     ];
+    
 
     // Create a pie chart for Non-Technical Skills
     const nonTechnicalCanvas = document.getElementById("nonTechnicalChart");
